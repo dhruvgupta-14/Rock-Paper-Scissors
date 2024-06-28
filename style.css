@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.wrapper{
+  background-color: #EFB11D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper h1{
+  font-size:2rem;
+  padding: 5px;
+}
+
+.wrapper img{
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  cursor: pointer;
+}
+.wrapper img:hover{
+  scale: 1.1;
+  transition: all;
+  transition-duration: 150ms;
+}
+
+.resultContainer{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0 0 0 0);
+  transform: scale(0);
+}
+.resultActive{
+  transform: scale(1);
+}
+.choice{
+  margin-top: 10px;
+}
+.resultBox1{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color: white;
+ width: 20rem;
+}
+.resultBox1 h1{
+  color: rgba(0, 0, 0, 0.841);
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 2px 5px;
+  text-align: center;
+}
+.resultBox,.scoreBox{
+  margin:5px 0;
+  font-size: 1.1rem;
+}
+.Btn{
+  margin-bottom: 10px;
+  display: flex;
+ 
+}
+.Btn1,.Btn2{
+  font-size: 1.1rem;
+  padding: 10px;
+  margin:10px;
+  background-color: #EFB11D;
+  color: rgba(255, 255, 255, 0.91);
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #EFB11D;
+  border-radius: 10px;
+  
+}
+.Btn2{
+  background-color: white;
+  color: #EFB11D;
+}
+.Btn1:hover{
+  scale: 1.1;
+  transition: all;
+  transition-duration: 150ms;
+}
+.Btn2:hover{
+  scale: 1.1;
+  transition: all;
+  transition-duration: 150ms;
+}
